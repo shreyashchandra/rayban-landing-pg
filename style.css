@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+#back {
+  width: 100%;
+  height: 100vh;
+}
+
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#working_area {
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+/* NAVBAR SECTION */
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 40px 0;
+}
+
+#nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  pointer-events: all;
+}
+
+#nleft img {
+  height: 60px;
+  cursor: pointer;
+}
+
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* HERO SECTION */
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+
+  width: 100%;
+  margin-top: 4vw;
+}
+
+#hleft {
+  min-width: 50%;
+}
+
+#hleft .elem {
+  height: 9vw;
+  overflow: hidden;
+
+  position: relative;
+}
+
+#hleft .elem h1:nth-child(1) {
+  top: 0;
+}
+
+#hleft .elem h1 {
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  font-size: 10vw;
+  font-weight: 100;
+  line-height: 1;
+
+  font-family: "kajiro";
+}
+
+#hleft button {
+  padding: 0.2vw 4vw;
+  font-size: 3vw;
+  margin-top: 3vw;
+  font-family: "kajiro";
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#hright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 18%;
+}
+
+#hright p {
+  font-size: 12px;
+  font-weight: 100;
+  text-align: right;
+}
+
+#hright #img_div {
+  width: 100%;
+  height: 170px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-image: url(https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#hright p:nth-child(3) {
+  margin-bottom: 80px;
+}
